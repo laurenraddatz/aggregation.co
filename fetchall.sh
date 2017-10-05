@@ -1,2 +1,2 @@
 #!/bin/bash
-php /var/www/vhosts/localhost.localdomain/aggregation/fetchsimplepie.php
+sudo php /var/www/html/aggregation.co/fetchsimplepie.php

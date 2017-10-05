@@ -4,6 +4,27 @@ require("include/header.php");
 require("include/nav.php");
 require("include/rss_util.php");
 
+// create a search box
+// function get_links($db) {
+// 	$link_query = "SELECT DISTINCT feedTitle FROM items";
+// 	$links = Query($db, $link_query);
+// 	return $links;
+// }
+// echo "<label>Add an RSS link to your feed</label>\t";
+// echo "<input name='input' id='input' placeholder='rss link'";
+// $links = get_links($db);
+// echo "<div class='row'>";
+// echo "<div class='col'>";
+// foreach($links as $link) {
+// 	echo "<label>";
+// 	echo "</label>";
+// }
+// echo "</div>"
+// echo "</div>"
+// echo "<div id=\"content\">\n";
+
+
+// source code below
 echo "<div id=\"content\">\n";
 echo "<div id=\"content-left\">\n";
 
@@ -76,6 +97,12 @@ function DisplayItem($prev, $item)
     echo "<span class=\"itemPubDate\">" .
 	date("M j  g:ia", strtotime($item['itemPubDate'])) .
 	"</span>\n";
+
+	// item author
+	// echo "<div class=\"author\">";
+	// if (($item['author'] != NULL) && (strlen($item['author']) > 0)) {
+	// 	 echo "<div class=\"author\">" . $item['author'] . "</div>\n";
+	// }
 
     // Item title
     echo "<div class=\"itemTitle\">";

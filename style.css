@@ -1,14 +1,15 @@
 @media only screen and (min-width: 480px) {
-	body { max-width: 640px; }
+	body { max-width: 800px; }
 }
 
 body {
 	width: 100%;
+	font: helvetica;
 	margin: 0 auto;
-	background-color: #fffff8;
+	background-color: #ccdfff;
 	font-family: "Archivo Narrow";
 	font-size: 11pt;
-	text-decoration: none;
+	text-decoration: none;\
 }
 
 /* include/nav.php */
@@ -77,6 +78,7 @@ nav span {
 	margin-top: 16px;
 	font-style: normal;
 	font-weight: bold;
+	color: #000000;
 }
 
 .itemDesc {

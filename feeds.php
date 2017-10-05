@@ -3,6 +3,18 @@ require("include/db.php");
 require("include/header.php");
 require("include/nav.php");
 
+// my feature!! box to add new feeds
+?>
+     <html>
+     <br> <br>
+      <form action="addfeed.php" method="post">add another rss feed:<br>
+      <input type="text">
+      <input type="submit"><br>
+      </form>
+      </body>
+     </html>
+<?php
+
 // Get all the user's feeds
 $query = "SELECT * FROM feeds";
 $rows = Query($db, $query);
@@ -65,5 +77,6 @@ foreach ($rows as $row) {
 	}
 	echo "</article>\n";
 }
+
 
 require("include/footer.php");
